@@ -1,25 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de tu página</title>
+    <title>GCN</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    /*Barra de Navegación */
 <div class="navbar">
     <div class="logo">GCN</div>
     <div class="navbar-links">
         <a href="index.html">Inicio</a>
         <a href="contacto.html">Contacto</a>
-        <button><img src="ruta-a-tu-imagen" alt="Botón"></button>
+        <div class="dropdown">
+            <button class="dropbtn"><img src="img/persona.png" alt="btnperfil" class="perfil"></button>
+            <div class="dropdown-content">
+                <a href="perfil.html">Perfil</a>
+                <a href="#">Cerrar Sesión</a>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="content">
-    <!-- Aquí va el contenido de tu página -->
+<div class="contenido">
+    <img src="img/machu.jpg">
 </div>
+
+<div class="subtitulo">
+    <h2>GESTOR DE CENSO NACIONAL</h2>
+</div>
+
+<div class="botones">
+    <div class="grupo-botones1">
+        <button class="btn">Agregar</button>
+        <button class="btn">Modificar</button>
+        <button class="btn">Eliminar</button>
+    </div>
+    <div class="grupo-botones2">
+        <button class="btn">Buscar</button>
+        <button class="btn">Estadísticas</button>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="footer-links">
+        <a href="terminos.html">Política de Privacidad</a>
+    </div>
+    <div class="copyright">
+        Gestor de Censo Nacional - Perú © 2024
+    </div>
+</div>
+
+
+
+
+
+
 
 </body>
 </html>

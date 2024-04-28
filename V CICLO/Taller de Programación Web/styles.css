@@ -1,0 +1,193 @@
+/* Resetear los márgenes y rellenos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+      font-family: 'Proxima Nova', sans-serif; /* Aplica la fuente Proxima Nova a todo el proyecto */
+    
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+/* BARRA DE NAVEGACIÓN */
+.navbar {
+    background-color: #080808;
+    color: #E0E0E0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%; /* La barra ocupa el 100% del ancho horizontal */
+    height: 10%; /* La barra ocupa el 10% de la altura */
+    position: fixed; /* Para que la barra permanezca fija en la parte superior */
+    top: 0; /* Para que la barra esté en la parte superior */
+    left: 0; /* Para que la barra esté en la parte izquierda */
+    z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+}
+
+.logo {
+    color:#E0E0E0;
+    font-size: 30px;
+    margin-left: 41px;
+    font-family: 'Cinzel', serif; /* Cambia la fuente del logo a Cinzel */
+}
+
+.navbar-links {
+    margin-right: 70px; /* Ajusta el margen derecho del encabezado derecho */
+    font-family: 'Cinzel', serif; /* Cambia la fuente del logo a Cinzel */
+
+}
+
+.navbar-links a {
+    color: #E0E0E0;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 17px;
+}
+
+.navbar-links button {
+    border: none;
+    background: none;
+    margin-top: 10px; /* Ajusta el margen superior del botón */
+    margin-bottom: 0; /* Elimina el margen inferior del botón */
+}
+
+.navbar-links button img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    max-height: 30px; /* Ajusta el alto máximo de la imagen */
+}
+
+.navbar-links a:hover {
+    color: #999; /* Cambia el color del texto al pasar el mouse */
+}
+
+.navbar-links button:hover img {
+    filter: brightness(70%); /* Oscurece ligeramente la imagen al pasar el mouse */
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+/* MENÚ DESPLEGABLE */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mostrar el menú desplegable al pasar el ratón sobre el botón */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+/*AJUSTAR FONDO MACHU PICCHU*/
+
+.contenido img {
+    width: 100%; /* Ajusta el ancho de la imagen para que ocupe todo el espacio disponible */
+    height: 100vh;/*Ajustar a la altura de la ventana de la pagina*/
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.subtitulo {
+    text-align: center; /* Centra el texto */
+    position: absolute; /* Posiciona absolutamente el subtitulo */
+    top: 30%; /* Lo coloca en la mitad superior de la pantalla */
+    left: 50%; /* Lo coloca en el centro horizontal */
+    transform: translate(-50%, -50%); /* Lo centra verticalmente */
+    z-index: 1; /* Asegura que esté encima de la imagen de fondo */
+    color:#FFFFFF;
+    font-family: 'Cinzel', serif;
+    font-size: 27px;
+    letter-spacing: 8px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los botones */
+    position: absolute; /* Posiciona absolutamente los botones */
+    top: 50%; /* Lo coloca en la mitad superior de la pantalla */
+    left: 50%; /* Lo coloca en el centro horizontal */
+    transform: translate(-50%, -50%); /* Lo centra verticalmente */
+    z-index: 1; /* Asegura que esté encima de la imagen de fondo */
+}
+
+.grupo-botones1 {
+    margin-bottom: 150px; /* Espacio entre los grupos de botones */
+}
+
+.grupo-botones2 {
+    margin-bottom: 0px; /* Espacio entre los grupos de botones */
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 0 60px; /* Espacio entre los botones */
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*BARRA INFERIOR - PIE DE PÁGINA*/
+.footer {
+    background-color:#080808;
+    color: #E0E0E0;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 10px 20px;
+    width: 100%;
+    height: 75px; /* Altura de la barra de pie de página */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.footer-links {
+    margin-bottom: 10px; /* Agrega espacio entre el enlace y el texto */
+
+}
+
+.footer-links a:hover {
+    color: #999; /* Cambia el color del texto al pasar el mouse */
+}
+
+.footer-links a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Estilo para el texto de derechos de autor */
+.copyright {
+    font-size: 14px;
+}
