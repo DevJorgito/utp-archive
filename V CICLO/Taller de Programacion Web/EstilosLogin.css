@@ -7,13 +7,13 @@ body{
 }
 
 .grid{
-   width: 100vw;
-   height: 100vh;
-   display: grid;
-   grid-template-columns: 5% 10% 15% 20% 5% 25% 10% 10%;  
-   grid-template-rows: 15% 10% 57% 8% 10%;  
-   position: relative;
-}
+    width: 100%; /* Utiliza el 100% del ancho del contenedor padre */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 5% 10% 15% 20% 5% 25% 10% 10%;  
+    grid-template-rows: 15% 10% 57% 8% 10%;  
+    position: relative;
+ }
 
 h2{
 
@@ -21,17 +21,14 @@ h2{
 }
 
 img{
-    width: 400px;
-
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
 }
 
 .content_img{
-  grid-column: 3/5;
-  grid-row: 3/4;
- 
- 
-  min-width: 300px;
-}
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+  
 .content_form{
     grid-column: 6/8;
     grid-row: 3/4;
@@ -120,12 +117,21 @@ img{
     .input{
         width: 90%;
     }
-
     .allign_rigth{
         right: 25px;
     }
-    
 }
+/* Ajustes para dispositivos más pequeños */
+@media (max-width: 500px){
+    .grid{
+        grid-template-columns: 5% 15% 25% 15% 5% 25% 5% 5%; /* Modifica las columnas para ocupar más espacio en dispositivos pequeños */
+    }
+    .content_img{
+        display: none; /* Oculta la imagen en dispositivos muy pequeños */
+    }
+}
+
+
 .buttom:hover{
     background-color: rgb(49, 47, 47);
     cursor: pointer;
