@@ -6,7 +6,8 @@
 }
 body{
       font-family: 'Proxima Nova', sans-serif; /* Aplica la fuente Proxima Nova a todo el proyecto */
-    
+      background-attachment: fixed;
+        overflow-y: hidden;
 }
 /*-----------------------------------------------------------------------------------------------------------------*/
 
@@ -145,10 +146,16 @@ body{
     left: 50%; /* Lo coloca en el centro horizontal */
     transform: translate(-50%, -50%); /* Lo centra verticalmente */
     z-index: 1; /* Asegura que esté encima de la imagen de fondo */
+    margin-top: 2em;
+}
+
+.botones:hover{
+    color: white;
 }
 
 .grupo-botones1 {
-    margin-bottom: 2vw; /* Espacio entre los grupos de botones */
+    margin-bottom: 10vw; /* Espacio entre los grupos de botones */
+
 }
 
 .grupo-botones2 {
@@ -156,10 +163,22 @@ body{
 }
 
 .btn {
-    padding: 1vw 2vw;
-    margin: 3.125vw; /* Espacio entre los botones */
+    padding: 0.521vw 1.915vw;/* Aumenta el padding horizontal para hacer los botones más largos */
+    margin: 0 3.125vw; /* Espacio entre los botones */
+    border: none;
+    background-color: white;
+    color: black;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 0.781vw;
+    letter-spacing: 0.052vw;
+    text-decoration: none;
 }
 
+
+.btn:hover {
+    background-color: black; /* Cambia el color del texto a negro cuando se pasa el mouse por encima */
+    color: white;
+}
 
 
 
