@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>GCN</title>
   <link href="EstilosLogin.css" rel="stylesheet">
 </head>
 
@@ -13,11 +13,11 @@
     <div class="barras_horizontales logo">GCN</div>
     <div class="content_img"><img src="img/logo.png"></div>
     <div class="content_form">
-      <form>
+      <form onsubmit="return validarFormulario()">
         <h2>INGRESA TUS DATOS PARA <br>INICIAR SESIÓN</h2>
         <input type="text" name="codigo" placeholder="Código" class="input"><br><br>
-        <input type="text" name="contraseña" placeholder="Contraseña" class="input "><br><br>
-        <a class="allign_rigth">Recuperar contraseña</a><br>
+        <input type="password" name="contraseña" placeholder="Contraseña" class="input "><br><br>
+        <a class="allign_rigth" href="RecuperarClave.html">Recuperar contraseña</a><br>
         <input type="submit" value="Iniciar sesión" class="buttom">
       </form>
 
@@ -29,17 +29,33 @@
       </div>
     </div>
 
-    <div class="barras_horizontales foot allign_center">
+    <div class="barras_horizontales foot allign_center terminos">
       <a href="terminos.html">Política de Privacidad</a>
-      <p>
-      Gestor de Censo Nacional - Perú © 2024
+      <p>Gestor de Censo Nacional - Perú © 2024</p>
     </div>
-
 
   </div>
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    function validarFormulario() {
+      // Comprobar el código y la contraseña ingresados
+      var codigo = document.getElementsByName('codigo')[0].value;
+      var contraseña = document.getElementsByName('contraseña')[0].value;
+
+      // Por ahora, asumamos que el código es "usuario" y la contraseña es "contraseña"
+      if (codigo === "usuario" && contraseña === "contraseña") {
+        // Redirigir al usuario a index.html
+        window.location.href = "index.html";
+        return false; 
+      } else {
+        alert("Código o contraseña incorrectos");
+        return false; 
+      }
+    }
+  </script>
 </body>
 
 </html>
