@@ -36,9 +36,9 @@ img{
     max-width: 400px;
     
 }
-.barras_horizontales{
+.barra_superior{
     grid-column: 1/10;
-   background-color: black;
+   background-color: #080808;
    color: white;
    
 }
