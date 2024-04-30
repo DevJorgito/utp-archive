@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color:#aeecc3; 
+    background-color:#CBE4D6; 
     align-items: center;
 
 }
@@ -13,9 +13,12 @@ body{
    grid-template-columns: 5% 10% 15% 20% 5% 25% 10% 10%;  
    grid-template-rows: 15% 10% 57% 8% 10%;  
    position: relative;
-            
 }
 
+h2{
+
+   color:#4A4A4A;
+}
 
 img{
     width: 400px;
@@ -37,13 +40,25 @@ img{
     
 }
 .barras_horizontales{
-    grid-column: 1/10;
-   background-color: black;
+   grid-column: 1/10;
+   background-color: #080808;
    color: white;
    
 }
 .foot{
-    grid-row: 5/6;
+    background-color:#080808;
+    color: #E0E0E0;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 10px 20px;
+    width: 100%;
+    height: 75px; /* Altura de la barra de pie de página */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 
@@ -52,9 +67,7 @@ img{
     height: 30px;
 }
 
-.foot{
-    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.3);
-}
+
 .buttom{
     background-color: black;
     color: white;
@@ -70,8 +83,20 @@ img{
 }
 .allign_center{
     text-align: center;
-   padding: 3px;
+    padding: 3px;
+    margin-top: 80px;
 }
+.help{
+    color: #4A4A4A;
+    font-size: 18px;
+    font-family: 'Proxima Nova', sans-serif;
+    letter-spacing: 1px;
+}    
+
+
+
+
+
 @media (max-width:710px){
     .content_form{
         grid-column: 2/5;
@@ -114,6 +139,9 @@ form + div{
     background-color: whitesmoke;
     cursor: pointer;
 }
-.barra_superior{
-    padding: 40px 0px 0px 30px;
+.logo{
+    color:#E0E0E0;
+    padding: 50px 0px 0px 60px;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
 }
