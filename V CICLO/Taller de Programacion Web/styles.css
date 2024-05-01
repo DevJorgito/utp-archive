@@ -251,7 +251,7 @@ body{
     border: none; /* Borde del recuadro */
     font-size: 0.677vw; /* Tamaño de fuente del texto */
     color: #FFFFFF; /* Color del texto */
-    width: 16.625vw; /* Ancho del recuadro de texto */
+    width: 15.625vw; /* Ancho del recuadro de texto */
     text-align: center; /* Centra el texto horizontalmente */
     display: inline-block; /* Hace que el contenedor se ajuste al contenido */
     letter-spacing: 0.052vw;
