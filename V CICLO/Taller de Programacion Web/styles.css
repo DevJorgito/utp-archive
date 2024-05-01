@@ -33,6 +33,7 @@ body{
     font-size: 1.5vw;
     margin-left: 2.5vw;
     font-family: 'Cinzel', serif; /* Cambia la fuente del logo a Cinzel */
+
 }
 
 .navbar-links {
@@ -135,6 +136,7 @@ body{
     font-family: 'Cinzel', serif;
     font-size: 1.4vw;
     letter-spacing: 0.5vw;
+    margin-bottom: 10px;
 }
 
 .botones {
@@ -146,20 +148,30 @@ body{
     left: 50%; /* Lo coloca en el centro horizontal */
     transform: translate(-50%, -50%); /* Lo centra verticalmente */
     z-index: 1; /* Asegura que esté encima de la imagen de fondo */
-    margin-top: 2em;
+    margin-top: 2.5em;
 }
 
 .botones:hover{
     color: white;
 }
 
-.grupo-botones1 {
-    margin-bottom: 10vw; /* Espacio entre los grupos de botones */
 
+
+.grupo-botones1{
+    display: flex;
+    margin-bottom: 10px; /* Espacio entre los grupos de botones */
+    margin-top: 40px;
 }
 
 .grupo-botones2 {
-    margin-bottom: 0; /* Espacio entre los grupos de botones */
+    display: flex;
+    margin-bottom: 5px; /* Espacio entre los grupos de botones */
+    margin-top: 30px;
+}
+
+.grupo-botones2 .btn {
+    display: flex;
+    margin-bottom: 5px;
 }
 
 .btn {
@@ -219,4 +231,25 @@ body{
 /* Estilo para el texto de derechos de autor */
 .copyright {
     font-size: 0.729vw;
+}
+
+
+.boton-descripcion {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    margin: 0 10px; /* Espacio entre los botones */
+}
+
+.descripcion {
+    margin-top: 20px; /* Espacio entre la descripción y el botón */
+    padding: 15px; /* Espaciado interno para el recuadro del texto */
+    background-color: rgba(249, 249, 249, 0); /* Color de fondo del recuadro completamente transparente */
+    border: none; /* Borde del recuadro */
+    font-size: 13px; /* Tamaño de fuente del texto */
+    color: #FFFFFF; /* Color del texto */
+    width: 300px; /* Ancho del recuadro de texto */
+    height: 100px; /* Altura del contenedor de texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    display: inline-block; /* Hace que el contenedor se ajuste al contenido */
+    letter-spacing: 1px;
+    font-family: 'Proxima Nova', sans-serif;
 }
