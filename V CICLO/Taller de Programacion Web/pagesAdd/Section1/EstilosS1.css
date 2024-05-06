@@ -1,0 +1,102 @@
+/* Resetear los márgenes y rellenos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+      font-family: 'Proxima Nova', sans-serif; /* Aplica la fuente Proxima Nova a todo el proyecto */
+      background-attachment: fixed;
+        overflow-y: hidden;
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+/* BARRA DE NAVEGACIÓN */
+.navbar {
+    background-color: #080808;
+    color: #E0E0E0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+    width: 100%; /* La barra ocupa el 100% del ancho horizontal */
+    height: auto; 
+    position: fixed; /* Para que la barra permanezca fija en la parte superior */
+    top: 0; /* Para que la barra esté en la parte superior */
+    left: 0; /* Para que la barra esté en la parte izquierda */
+    z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+}
+
+
+.logo {
+    color:#E0E0E0;
+    font-size: 1.5vw;
+    margin-left: 2.5vw;
+    font-family: 'Cinzel', serif; /* Cambia la fuente del logo a Cinzel */
+
+}
+
+.contenido img {
+    width: 100%; /* Ajusta el ancho de la imagen para que ocupe todo el espacio disponible */
+    height: auto;
+}
+
+.subtitulo {
+    text-align: center; /* Centra el texto */
+    position: absolute; /* Posiciona absolutamente el subtitulo */
+    top: 30%; /* Lo coloca en la mitad superior de la pantalla */
+    left: 50%; /* Lo coloca en el centro horizontal */
+    transform: translate(-50%, -50%); /* Lo centra verticalmente */
+    z-index: 1; /* Asegura que esté encima de la imagen de fondo */
+    color:#FFFFFF;
+    font-family: 'Cinzel', serif;
+    font-size: 0.8vw;
+    letter-spacing: 0.5vw;
+    margin-bottom: 0.521vw;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*BARRA INFERIOR - PIE DE PÁGINA*/
+.footer {
+    background-color:#080808;
+    color: #E0E0E0;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 1% 2%;
+    width: 100%;
+    height: auto; /* Altura de la barra de pie de página */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.footer-links {
+    margin-bottom: 0.521vw; /* Agrega espacio entre el enlace y el texto */
+
+}
+
+.footer-links a:hover {
+    color: #999; /* Cambia el color del texto al pasar el mouse */
+}
+
+.footer-links a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-size: 0.729vw;
+}
+
+/* Estilo para el texto de derechos de autor */
+.copyright {
+    font-size: 0.729vw;
+}
+
+
+.boton-descripcion {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    margin: 0 0.521vw; /* Espacio entre los botones */
+}

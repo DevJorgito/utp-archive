@@ -21,7 +21,7 @@ body{
     align-items: center;
     padding: 1% 2%;
     width: 100%; /* La barra ocupa el 100% del ancho horizontal */
-    height: auto; /* La barra ocupa el 10% de la altura */
+    height: auto;
     position: fixed; /* Para que la barra permanezca fija en la parte superior */
     top: 0; /* Para que la barra esté en la parte superior */
     left: 0; /* Para que la barra esté en la parte izquierda */
