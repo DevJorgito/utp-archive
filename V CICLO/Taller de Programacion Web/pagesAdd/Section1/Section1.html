@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GCN</title>
     <link rel="stylesheet" href="EstilosS1.css">
 </head>
+
 <body>
-    /*Barra de Navegación */
+    <!-- Barra de Navegación -->
     <div class="navbar">
         <div class="logo">GCN</div>
     </div>
@@ -20,6 +22,72 @@
         <h2>SECCIÓN 1: LOCALIZACIÓN DE LA VIVIENDA Y NÚMERO DE HOGARES</h2>
     </div>
 
+
+    <div class="contenido_form">
+
+        <form action="procesar_formulario.php" method="POST">
+            <div class="ubicacion-geografica">
+                <h3>A. UBICACIÓN GEOGRÁFICA:</h3>
+                <div class="grupotexto">
+                    <label for="departamento_codigo">1. DEPARTAMENTO <br>- Código:</label>
+                    <input type="text" id="departamento_codigo" name="departamento_codigo">
+                    <label for="departamento_nombre">Nombre:</label>
+                    <input type="text" id="departamento_nombre" name="departamento_nombre">
+                </div>
+                <div class="grupotexto">
+                    <label for="provincia_codigo">2. PROVINCIA <br>- Código:</label>
+                    <input type="text" id="provincia_codigo" name="provincia_codigo">
+                    <label for="provincia_nombre">Nombre:</label>
+                    <input type="text" id="provincia_nombre" name="provincia_nombre">
+                </div>
+                <div class="grupotexto">
+                    <label for="distrito_codigo">3. DISTRITO <br>- Código:</label>
+                    <input type="text" id="distrito_codigo" name="distrito_codigo">
+                    <label for="distrito_nombre">Nombre:</label>
+                    <input type="text" id="distrito_nombre" name="distrito_nombre">
+                </div>
+                <div class="grupotexto">
+                    <label for="centro_poblado_codigo">4. CENTRO POBLADO <br>- Código:</label>
+                    <input type="text" id="centro_poblado_codigo" name="centro_poblado_codigo">
+                    <label for="centro_poblado_nombre">Nombre:</label>
+                    <input type="text" id="centro_poblado_nombre" name="centro_poblado_nombre">
+                </div>
+            </div>
+
+            <div class="ubicacion-sensal">
+                <h3>B. UBICACIÓN SENSAL:</h3>
+                <div class="grupotexto">
+                    <h4>AREA URBANA</h4>
+                    <label for="zona">5. Zona N°:</label>
+                    <input type="text" id="zona" name="zona">
+                    <label for="seccion">6. Sección N°:</label>
+                    <input type="text" id="seccion" name="seccion">
+                    <br>
+                    <label for="aeu">7. A.E.U N°:</label>
+                    <input type="text" id="aeu" name="aeu">
+                    <label for="manzana">8. Manzana N°:</label>
+                    <input type="text" id="manzana" name="manzana">
+                    <br>
+                    <label for="frente">9. Frente N°:</label>
+                    <input type="text" id="frente" name="frente">
+                </div>
+                <div class="grupotexto">
+                    <h4>AREA RURAL</h4>
+                    <label for="seccion_rural">10. Sección N°:</label>
+                    <input type="text" id="seccion_rural" name="seccion_rural">
+                    <label for="aer">11. A.E.R N°:</label>
+                    <input type="text" id="aer" name="aer">
+                </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </div>
+
+
+
     <div class="footer">
         <div class="footer-links">
             <a href="terminos.html">Política de Privacidad</a>
@@ -30,4 +98,5 @@
     </div>
 
 </body>
+
 </html>

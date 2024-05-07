@@ -4,13 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-      font-family: 'Proxima Nova', sans-serif; /* Aplica la fuente Proxima Nova a todo el proyecto */
-      background-attachment: fixed;
-        overflow-y: hidden;
-}
-/*-----------------------------------------------------------------------------------------------------------------*/
 
+body {
+    font-family: 'Proxima Nova', sans-serif;
+    background-attachment: fixed;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
 
 /* BARRA DE NAVEGACIÓN */
 .navbar {
@@ -20,55 +20,67 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 1% 2%;
-    width: 100%; /* La barra ocupa el 100% del ancho horizontal */
-    height: auto; 
-    position: fixed; /* Para que la barra permanezca fija en la parte superior */
-    top: 0; /* Para que la barra esté en la parte superior */
-    left: 0; /* Para que la barra esté en la parte izquierda */
-    z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-
 .logo {
-    color:#E0E0E0;
+    color: #E0E0E0;
     font-size: 1.5vw;
     margin-left: 2.5vw;
-    font-family: 'Cinzel', serif; /* Cambia la fuente del logo a Cinzel */
+    font-family: 'Cinzel', serif;
+}
 
+.contenido {
+    position: relative;
 }
 
 .contenido img {
-    width: 100%; /* Ajusta el ancho de la imagen para que ocupe todo el espacio disponible */
+    width: 100%;
     height: auto;
 }
 
-.subtitulo {
-    text-align: center; /* Centra el texto */
-    position: absolute; /* Posiciona absolutamente el subtitulo */
-    top: 30%; /* Lo coloca en la mitad superior de la pantalla */
-    left: 50%; /* Lo coloca en el centro horizontal */
-    transform: translate(-50%, -50%); /* Lo centra verticalmente */
-    z-index: 1; /* Asegura que esté encima de la imagen de fondo */
-    color:#FFFFFF;
-    font-family: 'Cinzel', serif;
-    font-size: 0.8vw;
-    letter-spacing: 0.5vw;
-    margin-bottom: 0.521vw;
+.contenido_form {
+    position: absolute;
+    top: 50%; /* Ajuste para centrar verticalmente el formulario */
+    left: 50%; /* Ajuste para centrar horizontalmente el formulario */
+    transform: translate(-50%, -50%); /* Ajuste para centrar el formulario */
+    z-index: 1; /* Asegura que el formulario esté por encima de la imagen de fondo */
+    background-color:rgba(0, 0, 0, 0.1);
+    font-family: 'Proxima Nova', sans-serif;
+    color: #080808;
 }
 
+.grupotexto{
+    color: #E0E0E0;
+
+
+}
+.subtitulo {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    margin-top: 5%; /* Ajuste para separar el subtítulo del contenido */
+}
 
 /*-----------------------------------------------------------------------------------------------------------------*/
-/*BARRA INFERIOR - PIE DE PÁGINA*/
+
+/* BARRA INFERIOR - PIE DE PÁGINA */
 .footer {
-    background-color:#080808;
+    background-color: #080808;
     color: #E0E0E0;
     display: flex;
-    flex-direction: column; /* Apila los elementos verticalmente */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 1% 2%;
     width: 100%;
-    height: auto; /* Altura de la barra de pie de página */
+    height: auto;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -76,27 +88,20 @@ body{
 }
 
 .footer-links {
-    margin-bottom: 0.521vw; /* Agrega espacio entre el enlace y el texto */
-
+    margin-bottom: 10px; /* Ajuste para separar los enlaces del texto de derechos de autor */
 }
 
 .footer-links a:hover {
-    color: #999; /* Cambia el color del texto al pasar el mouse */
+    color: #999;
 }
 
 .footer-links a {
     color: #E0E0E0;
     text-decoration: none;
-    font-size: 0.729vw;
+    font-size: 12px;
 }
 
 /* Estilo para el texto de derechos de autor */
 .copyright {
-    font-size: 0.729vw;
-}
-
-
-.boton-descripcion {
-    text-align: center; /* Centra el contenido dentro del contenedor */
-    margin: 0 0.521vw; /* Espacio entre los botones */
+    font-size: 12px;
 }
