@@ -12,75 +12,102 @@
     <!-- Barra de Navegación -->
     <div class="navbar">
         <div class="logo">GCN</div>
+        <div class="navbar-links">
+            <a href="index.html">Inicio</a>
+            <a href="contacto.html">Contacto</a>
+            <div class="dropdown">
+                <button class="dropbtn"><img src="../../img/persona.png" alt="btnperfil" class="perfil"></button>
+                <div class="dropdown-content">
+                    <a href="perfil.html">Perfil</a>
+                    <a href="#">Cerrar Sesión</a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="contenido">
         <img src="../../img/machu.jpg">
     </div>
 
-    <div class="subtitulo">
-        <h2>SECCIÓN 1: LOCALIZACIÓN DE LA VIVIENDA Y NÚMERO DE HOGARES</h2>
-    </div>
+  
 
 
     <div class="contenido_form">
-
+        <div class="subtitulo">
+            <h2>SECCIÓN 1: LOCALIZACIÓN DE LA VIVIENDA Y NÚMERO DE HOGARES</h2>
+            <br>
+        </div>
         <form action="procesar_formulario.php" method="POST">
+            <div class="Numero_Vivienda">
+                <label for="">VIVIENDA N°</label>
+                <input type="text" id="numvivienda" name="numero de vivienda">
+            </div>
             <div class="ubicacion-geografica">
-                <h3>A. UBICACIÓN GEOGRÁFICA:</h3>
+                <h3>A. UBICACIÓN GEOGRÁFICA</h3>
                 <div class="grupotexto">
-                    <label for="departamento_codigo">1. DEPARTAMENTO <br>- Código:</label>
-                    <input type="text" id="departamento_codigo" name="departamento_codigo">
-                    <label for="departamento_nombre">Nombre:</label>
-                    <input type="text" id="departamento_nombre" name="departamento_nombre">
+                    <label for="departamento_codigo">1. DEPARTAMENTO</label>
+                    <input type="text" id="departamento_nombre" class="input">
                 </div>
                 <div class="grupotexto">
-                    <label for="provincia_codigo">2. PROVINCIA <br>- Código:</label>
-                    <input type="text" id="provincia_codigo" name="provincia_codigo">
-                    <label for="provincia_nombre">Nombre:</label>
-                    <input type="text" id="provincia_nombre" name="provincia_nombre">
+                    <label for="provincia_codigo">2. PROVINCIA</label>
+                    <input type="text" id="provincia_nombre" class="input">
                 </div>
                 <div class="grupotexto">
-                    <label for="distrito_codigo">3. DISTRITO <br>- Código:</label>
-                    <input type="text" id="distrito_codigo" name="distrito_codigo">
-                    <label for="distrito_nombre">Nombre:</label>
-                    <input type="text" id="distrito_nombre" name="distrito_nombre">
+                    <label for="distrito_codigo">3. DISTRITO</label>
+                    <input type="text" id="distrito_nombre" class="input">
                 </div>
                 <div class="grupotexto">
-                    <label for="centro_poblado_codigo">4. CENTRO POBLADO <br>- Código:</label>
-                    <input type="text" id="centro_poblado_codigo" name="centro_poblado_codigo">
-                    <label for="centro_poblado_nombre">Nombre:</label>
-                    <input type="text" id="centro_poblado_nombre" name="centro_poblado_nombre">
+                    <label for="centro_poblado_codigo">4. CENTRO POBLADO</label>
+                    <input type="text" id="centro_poblado_nombre" class="input">
                 </div>
             </div>
 
             <div class="ubicacion-sensal">
-                <h3>B. UBICACIÓN SENSAL:</h3>
+                <h3>B. UBICACIÓN SENSAL</h3>
                 <div class="grupotexto">
                     <h4>AREA URBANA</h4>
                     <label for="zona">5. Zona N°:</label>
-                    <input type="text" id="zona" name="zona">
+                    <input type="text" id="zona" class="input">
                     <label for="seccion">6. Sección N°:</label>
-                    <input type="text" id="seccion" name="seccion">
-                    <br>
+                    <input type="text" id="seccion" class="input">
                     <label for="aeu">7. A.E.U N°:</label>
-                    <input type="text" id="aeu" name="aeu">
-                    <label for="manzana">8. Manzana N°:</label>
-                    <input type="text" id="manzana" name="manzana">
+                    <input type="text" id="aeu" class="input">
                     <br>
+                    <label for="manzana">8. Manzana N°:</label>
+                    <input type="text" id="manzana" class="input">
                     <label for="frente">9. Frente N°:</label>
-                    <input type="text" id="frente" name="frente">
+                    <input type="text" id="frente" class="input">
                 </div>
                 <div class="grupotexto">
                     <h4>AREA RURAL</h4>
                     <label for="seccion_rural">10. Sección N°:</label>
-                    <input type="text" id="seccion_rural" name="seccion_rural">
+                    <input type="text" id="seccion_rural" class="input">
                     <label for="aer">11. A.E.R N°:</label>
-                    <input type="text" id="aer" name="aer">
+                    <input type="text" id="aer" class="input">
+                </div>
+                <div class="grupotexto">
+                    <label for="vivienda_dir"><b>DIRECCIÓN DE LA VIVIENDA</b></label>
+                    <label for="tipo_via">Tipo de vía: </label>
+                    <select name="tipo_via" >
+                        <option value="avenida">Avenida</option>
+                        <option value="calle">Calle</option>
+                        <option value="jiron">Jirón</option>
+                        <option value="pasaje">Pasaje</option>
+                        <option value="carretera">Carretera</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <label for="NombreVia">Nombre de Vía</label>
+                    <input type="text" class="input">
+                    <label for="NumPuerta">N° de puerta</label>
+                    <input type="text" class="input">
+                    <label for="piso">Piso</label>
+                    <input type="text" class="input">
+                    <label for="Manzana">Manzana</label>
+                    <input type="text" class="input">
                 </div>
             </div>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" class="btnEnviar">Enviar</button>
 
         </form>
 

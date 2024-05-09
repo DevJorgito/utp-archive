@@ -8,6 +8,7 @@
 body {
     font-family: 'Proxima Nova', sans-serif;
     background-attachment: fixed;
+    overflow-y: hidden;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
@@ -28,6 +29,86 @@ body {
     z-index: 1000;
 }
 
+
+.navbar-links {
+    margin-right: 5%; /* Ajusta el margen derecho del encabezado derecho */
+    font-family: 'Cinzel', serif; /* Cambia la fuente del logo a Cinzel */
+    margin-top: 1.8vw;
+    display: flex;
+}
+
+.navbar-links a {
+    color: #E0E0E0;
+    text-decoration: none;
+    margin-right: 2vw;
+    margin-top: 0.7vw;
+    font-size: 1.5vwpx;
+}
+
+.navbar-links button {
+    border: none;
+    background: none;
+    margin-top: 0; /* Ajusta el margen superior del botón */
+    margin-bottom: 0; /* Elimina el margen inferior del botón */
+}
+
+.navbar-links button img {
+    max-height: 3vh; /* Ajusta el alto máximo de la imagen */
+}
+
+.navbar-links a:hover {
+    color: #999; /* Cambia el color del texto al pasar el mouse */
+}
+
+.navbar-links button:hover img {
+    filter: brightness(70%); /* Oscurece ligeramente la imagen al pasar el mouse */
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+/* MENÚ DESPLEGABLE */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 2.083vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: calc(100% + 2px); /* Ajusta la posición vertical para que esté justo debajo del botón */
+    left: 0; /* Ajusta la posición horizontal para que esté alineado con el botón */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 2% 4%;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Mostrar el menú desplegable al pasar el ratón sobre el botón */
+.dropbtn:focus + .dropdown-content,
+.dropdown-content:focus-within {
+    display: block; /* Muestra la lista desplegable cuando el botón tiene foco o la lista desplegable tiene un descendiente con foco */
+}
+
+.dropbtn {
+    width: 2.083vw; /* Define un ancho fijo para el botón */
+    height: 2.083vw; /* Define una altura fija para el botón */
+    padding: 0;
+    background: none;
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer;
+}
+
 .logo {
     color: #E0E0E0;
     font-size: 1.5vw;
@@ -46,27 +127,83 @@ body {
 
 .contenido_form {
     position: absolute;
-    top: 50%; /* Ajuste para centrar verticalmente el formulario */
-    left: 50%; /* Ajuste para centrar horizontalmente el formulario */
-    transform: translate(-50%, -50%); /* Ajuste para centrar el formulario */
-    z-index: 1; /* Asegura que el formulario esté por encima de la imagen de fondo */
-    background-color:rgba(0, 0, 0, 0.1);
+    width: 60%;
+    top: 50%;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
     font-family: 'Proxima Nova', sans-serif;
     color: #080808;
 }
 
-.grupotexto{
+.grupotexto {
     color: #E0E0E0;
-
+    display: inline-block;
+    text-align: left;
+    margin: 10px;
 
 }
+
+
 .subtitulo {
     text-align: center;
     color: #FFFFFF;
     font-family: 'Cinzel', serif;
-    font-size: 24px;
-    margin-top: 5%; /* Ajuste para separar el subtítulo del contenido */
+    font-size: 1.042vw;
 }
+
+.viviendadir {
+    color: #E0E0E0;
+}
+
+.ubicacion-geografica {
+    text-align: center;
+}
+.ubicacion-sensal {
+    text-align: center;
+}
+.grupotexto label{
+    display: block;
+}
+
+.ubicacion-sensal label {
+    display: block;
+}
+
+
+
+.grupotexto input {
+    width: 10.417vw;
+}
+.grupotexto select,
+    .grupotexto input[type="text"] {
+        width: 10.417vw;
+    }
+
+.grupotexto h4 {
+    margin-top: 0; /* Elimina el margen superior del título */
+}
+
+
+.btnEnviar {
+    background-color: black; 
+    color: white; 
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    float: right; 
+}
+
+.btnEnviar:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 
@@ -88,7 +225,7 @@ body {
 }
 
 .footer-links {
-    margin-bottom: 10px; /* Ajuste para separar los enlaces del texto de derechos de autor */
+    margin-bottom: 10px;
 }
 
 .footer-links a:hover {
@@ -101,7 +238,6 @@ body {
     font-size: 12px;
 }
 
-/* Estilo para el texto de derechos de autor */
 .copyright {
     font-size: 12px;
 }
