@@ -39,54 +39,55 @@
         </div>
         <form action="procesar_formulario.php" method="POST">
             <div class="Numero_Vivienda">
-                <label for=""><b>VIVIENDA N°</b></label>
-                <input type="text" id="numvivienda" name="numero de vivienda">
+                <label for="numcedula"><b>N° de Cédula</b></label>
+                <input type="text" id="numcedula">
+                <label for="numvivienda"><b>N° de Vivienda</b></label>
+                <input type="text" id="numvivienda">
             </div>
+            <br>
             <div class="ubicacion-geografica">
                 <h3>A. UBICACIÓN GEOGRÁFICA</h3>
                 <div class="grupotexto">
-                    <label for="departamento_codigo"><b>1. DEPARTAMENTO</b></label>
+                    <label for="departamento_codigo"><b>DEPARTAMENTO</b></label>
                     <input type="text" id="departamento_nombre" class="input">
                 </div>
                 <div class="grupotexto">
-                    <label for="provincia_codigo"><b>2. PROVINCIA</b></label>
+                    <label for="provincia_codigo"><b>PROVINCIA</b></label>
                     <input type="text" id="provincia_nombre" class="input">
                 </div>
                 <div class="grupotexto">
-                    <label for="distrito_codigo"><b>3. DISTRITO</b></label>
+                    <label for="distrito_codigo"><b>DISTRITO</b></label>
                     <input type="text" id="distrito_nombre" class="input">
-                </div>
-                <div class="grupotexto">
-                    <label for="centro_poblado_codigo"><b>4. CENTRO POBLADO</b></label>
-                    <input type="text" id="centro_poblado_nombre" class="input">
                 </div>
             </div>
 
             <div class="ubicacion-sensal">
                 <h3>B. UBICACIÓN SENSAL</h3>
-                <div class="grupotexto">
+                <div class="grupotexto urbana">
                     <h4>AREA URBANA</h4>
-                    <label for="zona">5. Zona N°:</label>
-                    <input type="text" id="zona" class="input">
-                    <label for="seccion">6. Sección N°:</label>
-                    <input type="text" id="seccion" class="input">
-                    <label for="aeu">7. A.E.U N°:</label>
-                    <input type="text" id="aeu" class="input">
+                    <select name="areaurbana" >
+                        <option value="Zona">Zona</option>
+                        <option value="Sección">Sección</option>
+                        <option value="A.E.U">A.E.U</option>
+                        <option value="MANZANA">MANZANA</option>
+                        <option value="FRENTE">FRENTE</option> 
+                    </select>
                     <br>
-                    <label for="manzana">8. Manzana N°:</label>
-                    <input type="text" id="manzana" class="input">
-                    <label for="frente">9. Frente N°:</label>
-                    <input type="text" id="frente" class="input">
+                    <br>
+                    <input type="text" id="areaurbana">
                 </div>
                 <div class="grupotexto">
                     <h4>AREA RURAL</h4>
-                    <label for="seccion_rural">10. Sección N°:</label>
-                    <input type="text" id="seccion_rural" class="input">
-                    <label for="aer">11. A.E.R N°:</label>
-                    <input type="text" id="aer" class="input">
+                    <select name="arearural" >
+                        <option value="Sección">Sección</option>
+                        <option value="A.E.R">A.E.R</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input type="text" id="arearural">
                 </div>
                 <div class="grupotexto">
-                    <label for="vivienda_dir"><b>12. DIR. DE LA VIVIENDA</b></label>
+                    <label for="vivienda_dir"><b>DIR. DE LA VIVIENDA</b></label>
                     <label for="tipo_via">Tipo de vía: </label>
                     <select name="tipo_via" >
                         <option value="avenida">Avenida</option>
@@ -102,13 +103,11 @@
                     <input type="text" class="input">
                     <label for="piso">Piso</label>
                     <input type="text" class="input">
-                    <label for="Manzana">Manzana</label>
-                    <input type="text" class="input">
                 </div>
                 <div class="grupotexto">
-                    <label for="TotalHogares"><b>13. TOTAL DE HOGARES</b></label>
+                    <label for="TotalHogares"><b>TOTAL DE HOGARES</b></label>
                     <input type="text" class="input">
-                    <label for="N°Hogar"><b>14. HOGAR N°</b></label>
+                    <label for="N°Hogar"><b>HOGAR N°</b></label>
                     <input type="text" class="input">
                 </div>
             </div>

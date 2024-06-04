@@ -173,6 +173,12 @@ body {
 }
 
 
+.grupotexto urbana{
+    padding-top: 10px;
+}
+
+
+
 
 .grupotexto input {
     width: 10.417vw;
@@ -201,6 +207,7 @@ body {
     background-color: white;
     color: black;
 }
+
 
 
 
