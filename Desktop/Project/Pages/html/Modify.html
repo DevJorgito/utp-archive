@@ -14,9 +14,11 @@
             <a href="/index.html">Inicio</a>
             <a href="contacto.html">Contacto</a>
             <div class="dropdown">
-                <button class="dropbtn"><img src="/Img/persona.png" alt="btnperfil" class="perfil"></button>
+                <button class="dropbtn">
+                    <img src="/Img/persona.png" alt="btnperfil" class="perfil">
+                </button>
                 <div class="dropdown-content">
-                    <a href="perfil.html">Perfil</a>
+                    <a href="/Pages/html/Profile.html">Perfil</a>
                     <a href="#">Cerrar Sesión</a>
                 </div>
             </div>
@@ -31,7 +33,7 @@
         <div class="form-container">
             <form id="modificarForm">
                 <label for="entidad">Seleccionar Entidad:</label>
-                <select id="entidad" name="entidad" onchange="cargarCampos()">
+                <select id="entidad" name="entidad">
                     <option value="">Seleccione una entidad</option>
                     <option value="encuestador">Encuestador</option>
                     <option value="persona">Persona</option>
@@ -41,9 +43,14 @@
                     <option value="infraestructura">Infraestructura</option>
                 </select>
 
-                <div id="campos"></div>
+                <div id="buscarIDDiv">
+                    <label for="buscarID">Buscar por ID:</label>
+                    <input type="text" id="buscarID" name="buscarID" placeholder="Ingrese el ID">
+                    <button type="button" onclick="buscarPorID()">Buscar</button>
+                </div>
 
-                <button type="submit">Modificar</button>
+                <div id="campos"></div>
+                <button type="submit" id="btnModificar" style="display: none;">Modificar</button>
             </form>
         </div>
     </div>

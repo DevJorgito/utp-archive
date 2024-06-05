@@ -1,8 +1,7 @@
 body {
     font-family: 'Proxima Nova', sans-serif;
-    background-attachment: fixed;
-    overflow-y: auto; /* Permitir el desplazamiento vertical */
     margin: 0;
+    overflow-y: auto; /* Permitir el desplazamiento vertical */
 }
 
 .navbar {
@@ -111,10 +110,10 @@ body {
     text-align: center;
     color: #FFFFFF;
     font-family: 'Cinzel', serif;
-    font-size: 1.4vw;
+    font-size: 0.8vw;
     letter-spacing: 0.5vw;
     position: absolute;
-    top: 25%; /* Ajustar según sea necesario */
+    top: 20%; /* Ajustar según sea necesario */
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -125,7 +124,7 @@ body {
     background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: absolute;
-    top: 65%; /* Ajustar según sea necesario */
+    top:60%; /* Ajustar según sea necesario */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -148,10 +147,9 @@ label {
     width: 80%;
 }
 
+select,
 input[type="text"],
-input[type="number"],
-input[type="date"],
-select {
+input[type="submit"] {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -160,55 +158,12 @@ select {
     margin-bottom: 10px;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+input[type="submit"] {
+    background-color: #333;
+    color: white;
     cursor: pointer;
-    margin-top: 20px;
 }
 
-button:hover {
-    background: #555;
-}
-
-
-/*BARRA INFERIOR - PIE DE PÁGINA*/
-.footer {
-    background-color:#080808;
-    color: #E0E0E0;
-    display: flex;
-    flex-direction: column; /* Apila los elementos verticalmente */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    padding: 1% 2%;
-    width: 100%;
-    height: auto; /* Altura de la barra de pie de página */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-.footer-links {
-    margin-bottom: 0.521vw; /* Agrega espacio entre el enlace y el texto */
-
-}
-
-.footer-links a:hover {
-    color: #999; /* Cambia el color del texto al pasar el mouse */
-}
-
-.footer-links a {
-    color: #E0E0E0;
-    text-decoration: none;
-    font-size: 0.729vw;
-}
-
-/* Estilo para el texto de derechos de autor */
-.copyright {
-    font-size: 0.729vw;
+input[type="submit"]:hover {
+    background-color: #555;
 }

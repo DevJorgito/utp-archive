@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GCN</title>
-  <link href="../css/stylesLogin.css" rel="stylesheet">
+  <link href="/stylesLogin.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,23 +39,7 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-  <script>
-    function validarFormulario() {
-      // Comprobar el código y la contraseña ingresados
-      var codigo = document.getElementsByName('codigo')[0].value;
-      var contraseña = document.getElementsByName('contraseña')[0].value;
-
-      // Por ahora, asumamos que el código es "usuario" y la contraseña es "contraseña"
-      if (codigo === "usuario" && contraseña === "contraseña") {
-        // Redirigir al usuario a index.html
-        window.location.href = "/index.html";
-        return false; 
-      } else {
-        alert("Código o contraseña incorrectos");
-        return false; 
-      }
-    }
-  </script>
+  <script src="/Pages/JS/ScriptLogin.js"></script>
 </body>
 
 </html>
